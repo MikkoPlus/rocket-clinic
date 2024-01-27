@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'PTSans';
+  font-weight: 500;
+  font-display: swap;
+  src: url('PTSansCaption-Regular.woff'), url('PTSansCaption-Regular.woff2');
+}
+
+@font-face {
+  font-family: 'PTSans';
+  font-weight: 700;
+  font-display: swap;
+  src: url('PTSansCaption-Bold.woff'), url('PTSansCaption-Bold.woff2');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-display: swap;
+  src: url('Ubuntu-Regular.woff'), url('Ubuntu-Regular.woff2');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-display: swap;
+  src: url('Ubuntu-Bold.woff'), url('Ubuntu-Bold.woff2');
+}
