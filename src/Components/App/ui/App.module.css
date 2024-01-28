@@ -4,10 +4,22 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: hidden;
 
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.invisibleArea {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .invisibleArea {
+    display: block;
+    height: 59px;
+  }
 }
