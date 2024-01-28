@@ -1,7 +1,21 @@
 @import '/src/vendors/normalize';
 @import '/src/vendors/fonts/font';
 
+:root {
+  --primary-color: #fff;
+  --acent-color: #1fa181;
+  --ligt-acent-color: #0dbc91;
+  --dark-acent-color: #08664f;
+  --text-color: #364844;
+  --secondary-text-color: #868686;
+}
+
 html {
   scroll-behavior: smooth;
   font-family: 'PTSans', 'Ubuntu', sans-serif;
+}
+
+body.lock {
+  height: 100%;
+  overflow: hidden;
 }
