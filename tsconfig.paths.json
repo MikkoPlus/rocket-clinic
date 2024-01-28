@@ -4,8 +4,9 @@
     "rootDir": "src",
     "paths": {
       "@/*": ["./*"],
-      "@component/*": ["./src/Components/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@component/*": ["./Components/*"],
+      "@utils/*": ["./utils/*"],
+      "@img/*": ["./img/*"]
     }
   }
 }
