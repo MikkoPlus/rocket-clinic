@@ -6,10 +6,12 @@ import { buttonVariants } from '../model/btnVariants';
 export const Button: React.FC<ButtonProps> = ({
   variant,
   text,
-  additionalClass
+  additionalClass,
+  btnClick
 }) => {
   return (
     <button
+      onClick={btnClick}
       className={`${style.button} ${style[buttonVariants[variant]]} ${additionalClass ? additionalClass : ''}`}
     >
       {text}
