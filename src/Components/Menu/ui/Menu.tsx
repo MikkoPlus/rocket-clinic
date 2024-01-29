@@ -5,7 +5,7 @@ import globalStyles from '@component/global.module.css';
 import Button from '@component/ui/Button';
 import { MenuProps } from '../model/types';
 
-export const Menu: React.FC<MenuProps> = ({ isActive }) => {
+export const Menu: React.FC<MenuProps> = ({ isActive, openPopup }) => {
   return (
     <div className={`${style.wrapper} ${isActive ? style.open : style.close}`}>
       <nav className={globalStyles.container}>
@@ -21,6 +21,7 @@ export const Menu: React.FC<MenuProps> = ({ isActive }) => {
           })}
         </ul>
         <Button
+          btnClick={openPopup}
           additionalClass={style.button}
           text="Записаться на приём"
           variant="white"

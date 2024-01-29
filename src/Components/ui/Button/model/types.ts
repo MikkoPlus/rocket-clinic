@@ -6,6 +6,7 @@ export interface ButtonProps
   variant: string;
   text: string;
   additionalClass?: string;
+  btnClick: () => void;
 }
 
 export type ButtonVariantType = {

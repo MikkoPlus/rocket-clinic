@@ -11,7 +11,8 @@ import { HeaderProps } from '../model/types';
 
 export const Header: React.FC<HeaderProps> = ({
   isMenuActive,
-  switchMenuState
+  switchMenuState,
+  openPopup
 }) => {
   const { street, town, phoneNumber } = mainData;
   const onlyDigitsNumber = phoneNumber.replace(onlyDigits, '');
@@ -36,7 +37,11 @@ export const Header: React.FC<HeaderProps> = ({
               <img src={whatsappIcon} alt="whatsapp" className={style.icon} />
               <span className={style.number}>{phoneNumber}</span>
             </a>
-            <Button text="Записаться на приём" variant="green" />
+            <Button
+              text="Записаться на приём"
+              variant="green"
+              btnClick={openPopup}
+            />
           </div>
         </div>
       </div>
