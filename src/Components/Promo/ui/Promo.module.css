@@ -61,18 +61,21 @@
     max-width: 80%;
     margin: 0 auto;
     padding: 100px 20px;
-    text-align: center;
+    text-align: left;
   }
   .title,
   .description {
     width: 100%;
+  }
+
+  .title {
+    font-size: 30px;
   }
 }
 
 @media (max-width: 565px) {
   .textBlock {
     padding: 35px 20px 53px;
-    text-align: left;
   }
   .title {
     font-size: 26px;
