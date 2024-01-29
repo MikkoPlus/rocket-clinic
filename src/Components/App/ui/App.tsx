@@ -6,6 +6,7 @@ import { useMenuState } from '@/hooks/useMenuState';
 import Popup from '@/Components/popup';
 import { useModalState } from '@/hooks/useModalState';
 import Promo from '@/Components/Promo';
+import FAQ from '@/Components/FAQ';
 
 export const App = () => {
   const { isActive, switchActiveState } = useMenuState();
@@ -21,6 +22,7 @@ export const App = () => {
       <div className={style.invisibleArea}></div>
       <Menu isActive={isActive} openPopup={openModal} />
       <Promo />
+      <FAQ />
       <Popup closeModal={closeModal} isModalOpen={isModalVisible} />
     </div>
   );
