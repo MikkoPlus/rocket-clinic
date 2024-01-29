@@ -1,8 +1,14 @@
+.wrapper {
+  background-color: var(--acent-color);
+}
+
 .menu {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10px 30px;
   list-style: none;
   display: flex;
   column-gap: 30px;
-  padding: 10px 0;
 }
 
 .link {
@@ -18,8 +24,11 @@
   display: none;
 }
 
-.wrapper {
-  background-color: var(--acent-color);
+@media (max-width: 1140px) {
+  .menu {
+    max-width: 100%;
+    padding: 10px 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -53,9 +62,11 @@
 
   .open {
     transform: translateY(0);
+    opacity: 1;
   }
   .close {
     transform: translateY(-110%);
+    opacity: 0;
   }
 }
 
