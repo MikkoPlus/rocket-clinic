@@ -23,3 +23,9 @@
     height: 59px;
   }
 }
+
+@media (max-width: 360px) {
+  .invisibleArea {
+    height: 55px;
+  }
+}
