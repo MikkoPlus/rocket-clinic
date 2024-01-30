@@ -350,6 +350,10 @@ template {
   display: none;
 }
 
+button {
+  outline: none;
+}
+
 ul,
 ol,
 li,
@@ -358,12 +362,23 @@ h2,
 h3,
 h4,
 h5,
+span,
 h6,
-p,
-a {
+p {
   padding: 0;
   margin: 0;
 }
+
+h1,
+h3,
+p {
+  cursor: default;
+}
+
 a {
   text-decoration: none;
+}
+
+img {
+  pointer-events: none;
 }

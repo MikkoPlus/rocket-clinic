@@ -1,8 +1,8 @@
 [
   {
     "title": "Check-UP",
-    "gender": "male",
-    "check-ups": [
+    "gender": "для мужчин",
+    "checkups": [
       "Гормональный скрининг",
       "Тестостерон",
       "Свободный тестостерон",
@@ -15,18 +15,30 @@
   },
   {
     "title": "Check-UP",
-    "gender": "female",
-    "check-ups": [
+    "gender": "для женщин",
+    "checkups": [
       "Гормональный скрининг",
       "Тестостерон",
       "Свободный тестостерон",
       "Тестостерон",
-      "Свободный тестостерон",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolor dicta sint impedit esse, delectus adipisci enim alias nemo obcaecati."
+      "Свободный тестостерон"
     ],
     "price": {
       "current": 3700,
       "old": 5000
+    }
+  },
+  {
+    "title": "Check-UP",
+    "gender": "для детей",
+    "checkups": [
+      "Гормональный скрининг",
+      "Тестостерон",
+      "Lorem ipsum  dicta sint impedit esse, delectus adipisci enim alias nemo obcaecati."
+    ],
+    "price": {
+      "current": 2200,
+      "old": 3500
     }
   }
 ]

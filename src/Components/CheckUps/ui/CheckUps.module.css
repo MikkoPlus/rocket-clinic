@@ -1,0 +1,61 @@
+.checkups {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+.control {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 36px;
+  height: 16px;
+}
+.pagination {
+  height: 100%;
+}
+
+.pagination > span {
+  color: #c0c0c0;
+  cursor: default;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.current {
+  color: var(--text-color);
+}
+
+.next,
+.prev {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 24px;
+  cursor: pointer;
+}
+
+.next path,
+.prev path {
+  transition: all 0.3s linear;
+}
+
+.next:hover path,
+.prev:hover path {
+  fill: var(--light-acent-color);
+}
+
+.next {
+  transform: rotate(180deg);
+}
