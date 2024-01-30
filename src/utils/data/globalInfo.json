@@ -1,5 +1,9 @@
 {
   "town": "Ростов-на-Дону",
   "street": "ул. Ленина, 2Б",
-  "phoneNumber": "+7(863) 000 00 00"
+  "socials": {
+    "instagramLink": "https://www.instagram.com/",
+    "whatsappNumber": "+7(863) 000 00 00",
+    "telegramLink": "https://web.telegram.org/"
+  }
 }
