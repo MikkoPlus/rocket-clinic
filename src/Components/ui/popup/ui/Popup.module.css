@@ -1,4 +1,4 @@
-.wrapper {
+.overlay {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -6,13 +6,20 @@
   top: 0;
   background-color: rgba(69, 146, 127, 0.9);
   backdrop-filter: blur(2px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 5;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s linear;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1140px;
+  padding: 0 17px;
+  margin: 0 auto;
 }
 
 .open {
@@ -22,6 +29,7 @@
 
 .window {
   position: relative;
+  width: 100%;
   background-color: #f8fbfa;
   padding: 60px 100px;
 }
@@ -32,4 +40,27 @@
   width: 20px;
   height: 20px;
   font-weight: 400;
+  cursor: pointer;
+}
+
+@media (max-width: 988px) {
+  .window {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .window {
+    width: auto;
+    padding: 22px;
+  }
+
+  .close {
+    right: 22px;
+    top: 22px;
+  }
+
+  .close path {
+    stroke: #569b89;
+  }
 }
