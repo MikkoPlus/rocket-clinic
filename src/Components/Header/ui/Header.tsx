@@ -21,7 +21,9 @@ export const Header: React.FC<HeaderProps> = ({
       <div className={style.wrapper}>
         <div className={style.firstPart}>
           <Hamburger isActive={isMenuActive} switchState={switchMenuState} />
-          <img src={logo} alt="logo" className={style.logo} />
+          <a className={style.logo} href="/">
+            <img src={logo} alt="logo" className={style.img} />
+          </a>
           <div className={style.place}>
             <a href={`tel:${onlyDigitsNumber}`} className={style.numberLink}>
               {phoneNumber}
