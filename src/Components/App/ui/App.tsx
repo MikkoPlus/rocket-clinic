@@ -7,6 +7,7 @@ import Popup from '@/Components/popup';
 import { useModalState } from '@/hooks/useModalState';
 import Promo from '@/Components/Promo';
 import FAQ from '@/Components/FAQ';
+import CheckUps from '@/Components/CheckUps';
 
 export const App = () => {
   const { isActive, switchActiveState } = useMenuState();
@@ -23,6 +24,7 @@ export const App = () => {
       <Menu isActive={isActive} openPopup={openModal} />
       <Promo />
       <FAQ />
+      <CheckUps />
       <Popup closeModal={closeModal} isModalOpen={isModalVisible} />
     </div>
   );
