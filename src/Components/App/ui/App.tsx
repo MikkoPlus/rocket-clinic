@@ -1,14 +1,13 @@
 import React from 'react';
 import style from './App.module.css';
 import Header from '@component/Header';
-// import Menu from '@component/Menu';
 import { useMenuState } from '@/hooks/useMenuState';
-import Popup from '@/Components/popup';
 import { useModalState } from '@/hooks/useModalState';
 import Promo from '@/Components/Promo';
 import FAQ from '@/Components/FAQ';
 import CheckUps from '@/Components/CheckUps';
 import Footer from '@/Components/Footer';
+import PopupWithForm from '@component/PopupWithForm';
 
 export const App: React.FC = () => {
   const { isActive, switchActiveState } = useMenuState();
@@ -26,7 +25,7 @@ export const App: React.FC = () => {
       <FAQ />
       <CheckUps />
       <Footer />
-      <Popup closeModal={closeModal} isModalOpen={isModalVisible} />
+      <PopupWithForm closeModal={closeModal} isModalOpen={isModalVisible} />
     </div>
   );
 };
