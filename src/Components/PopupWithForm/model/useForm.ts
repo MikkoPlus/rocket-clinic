@@ -24,7 +24,9 @@ export const useForm = ({
       'Номер телефона': formData.phone,
       Почта: formData.email
     });
-    if (!formRef || !formRef.current || !emailID || !templateID) return;
+    console.log(emailID, templateID, publicKey);
+    if (!formRef || !formRef.current || !emailID || !templateID || !publicKey)
+      return;
     switchLoadingState(true);
     emailjs
       .send(
