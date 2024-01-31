@@ -19,18 +19,12 @@ export const Footer: React.FC = () => {
         <Menu menuClass={style.menu} />
         <ul className={style.list}>
           <li className={style.item}>
-            <a
-              className={style.link}
-              target="_blank"
-              rel="noreferrer"
-              href={socials.instagramLink}
-            >
+            <a target="_blank" rel="noreferrer" href={socials.instagramLink}>
               <img className={style.img} src={instagramIcon} alt="Instagram" />
             </a>
           </li>
           <li className={style.item}>
             <a
-              className={style.link}
               target="_blank"
               rel="noreferrer"
               href={`tel:+${onlyDigitsNumber}`}
@@ -39,12 +33,7 @@ export const Footer: React.FC = () => {
             </a>
           </li>
           <li className={style.item}>
-            <a
-              className={style.link}
-              target="_blank"
-              rel="noreferrer"
-              href={socials.telegramLink}
-            >
+            <a target="_blank" rel="noreferrer" href={socials.telegramLink}>
               <img className={style.img} src={telegramIcon} alt="Telegram" />
             </a>
           </li>
