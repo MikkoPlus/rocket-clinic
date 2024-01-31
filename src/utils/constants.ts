@@ -23,10 +23,10 @@ export const emailID =
 
 export const templateID =
   process.env.NODE_ENV === 'production'
-    ? process.env.REACT_APP_EMAIL_ID
+    ? process.env.REACT_APP_TEMPLATE_ID
     : 'template_krrkbvg';
 
 export const publicKey =
   process.env.NODE_ENV === 'production'
-    ? process.env.REACT_APP_EMAIL_ID
+    ? process.env.REACT_APP_PUBLIC_KEY
     : 'ceFQyPGkomwgcZjFy';
