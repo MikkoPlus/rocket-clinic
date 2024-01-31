@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export const useMenuState = () => {
   const [isActive, setIsActive] = useState<boolean>(false);
@@ -7,12 +7,5 @@ export const useMenuState = () => {
     setIsActive(!isActive);
   };
 
-  useEffect(() => {
-    if (isActive) {
-      document.body.classList.add('lock');
-    } else {
-      document.body.classList.remove('lock');
-    }
-  }, [isActive]);
   return { isActive, switchActiveState };
 };
