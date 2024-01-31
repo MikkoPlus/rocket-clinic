@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rocket-clinic/static/css/main.63ecb615.css",
-    "main.js": "/rocket-clinic/static/js/main.afcf1fd5.js",
+    "main.css": "/rocket-clinic/static/css/main.1bc906e8.css",
+    "main.js": "/rocket-clinic/static/js/main.fda5b62e.js",
     "static/media/promo-img.jpg": "/rocket-clinic/static/media/promo-img.fc08e49f853f989d1138.jpg",
     "static/media/check-up-img.jpg": "/rocket-clinic/static/media/check-up-img.0f7731df9cb2d3901ed3.jpg",
     "static/media/Ubuntu-Regular.woff": "/rocket-clinic/static/media/Ubuntu-Regular.fe9d4feca52d55caf18f.woff",
@@ -19,11 +19,11 @@
     "index.html": "/rocket-clinic/index.html",
     "static/media/success-denied.svg": "/rocket-clinic/static/media/success-denied.d4ce2a261b68c6da973d51ef98afae1a.svg",
     "static/media/success.svg": "/rocket-clinic/static/media/success.2b96fab150ff4b12a8a1083b121b4f1c.svg",
-    "main.63ecb615.css.map": "/rocket-clinic/static/css/main.63ecb615.css.map",
-    "main.afcf1fd5.js.map": "/rocket-clinic/static/js/main.afcf1fd5.js.map"
+    "main.1bc906e8.css.map": "/rocket-clinic/static/css/main.1bc906e8.css.map",
+    "main.fda5b62e.js.map": "/rocket-clinic/static/js/main.fda5b62e.js.map"
   },
   "entrypoints": [
-    "static/css/main.63ecb615.css",
-    "static/js/main.afcf1fd5.js"
+    "static/css/main.1bc906e8.css",
+    "static/js/main.fda5b62e.js"
   ]
 }
