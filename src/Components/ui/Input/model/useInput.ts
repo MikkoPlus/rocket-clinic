@@ -5,7 +5,7 @@ import { useInputProps } from './types';
 
 export const useInput = ({
   isFormOpen,
-  inputName,
+  name,
   isInputValid,
   updateFormData
 }: useInputProps) => {
@@ -23,11 +23,12 @@ export const useInput = ({
   }, [isValid]);
 
   useEffect(() => {
-    if (value !== '' && !isEmpty(value)) {
+    if (value !== '') {
       setIsValid(true);
       setValidMessage('');
+      console.log(name);
 
-      if (inputName === 'phone') {
+      if (name === 'phone') {
         if (!phoneNumberRegExp.test(value)) {
           setIsValid(false);
           setValidMessage(validationMessages.invalidPhoneNumberMsg);
@@ -36,7 +37,7 @@ export const useInput = ({
           setValidMessage('');
         }
       }
-      if (inputName === 'email') {
+      if (name === 'email') {
         if (!emailRegExp.test(value)) {
           setIsValid(false);
           setValidMessage(validationMessages.invalidEmailMsg);
@@ -49,7 +50,7 @@ export const useInput = ({
       setIsValid(false);
       setValidMessage(validationMessages.emptyFieldMsg);
     }
-    updateFormData(inputName, value);
+    updateFormData(name, value);
   }, [value]);
 
   return {

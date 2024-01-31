@@ -23,7 +23,11 @@ export const PopupWithForm: React.FC<IPopupWithForm> = ({
     setIsPhoneInputValid,
     updateFormData,
     isFormValid
-  } = useForm({ switchLoadingState, switchSuccessState, showTooltipModal });
+  } = useForm({
+    switchLoadingState,
+    switchSuccessState,
+    showTooltipModal
+  });
 
   return (
     <>
@@ -46,7 +50,7 @@ export const PopupWithForm: React.FC<IPopupWithForm> = ({
             ref={formRef}
           >
             <Input
-              inputName="name"
+              name="name"
               placeholder="ФИО"
               type="text"
               isInputValid={setIsNameInputValid}
@@ -54,7 +58,7 @@ export const PopupWithForm: React.FC<IPopupWithForm> = ({
               updateFormData={updateFormData}
             />
             <Input
-              inputName="phone"
+              name="phone"
               placeholder="Номер телефона"
               type="text"
               isInputValid={setIsPhoneInputValid}
@@ -62,7 +66,7 @@ export const PopupWithForm: React.FC<IPopupWithForm> = ({
               updateFormData={updateFormData}
             />
             <Input
-              inputName="email"
+              name="email"
               placeholder="Электронная почта"
               type="text"
               isInputValid={setIsEmailInputValid}
