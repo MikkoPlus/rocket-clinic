@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import style from './Input.module.css';
 import { IInput } from '../model/types';
-import { phoneNumberRegExp, emailRegExp, isEmpty } from '@utils/constants';
-import { validationMessages } from '@utils/constants';
+import { useInput } from '../model/useInput';
+
 export const Input: React.FC<IInput> = ({
   name,
   type,
@@ -11,49 +11,13 @@ export const Input: React.FC<IInput> = ({
   updateFormData,
   isInputValid
 }) => {
-  const [isValid, setIsValid] = useState(false);
-  const [validMessage, setValidMessage] = useState('');
-  const [isDirty, setIsDirty] = useState(false);
-  const [value, setValue] = useState<string>('');
-
-  useEffect(() => {
-    setIsDirty(false);
-  }, [isFormOpen]);
-
-  useEffect(() => {
-    isInputValid(isValid);
-  }, [isValid]);
-
-  useEffect(() => {
-    if (value !== '' && !isEmpty(value)) {
-      setIsValid(true);
-      setValidMessage('');
-
-      if (name === 'phone') {
-        if (!phoneNumberRegExp.test(value)) {
-          setIsValid(false);
-          setValidMessage(validationMessages.invalidPhoneNumberMsg);
-        } else {
-          setIsValid(true);
-          setValidMessage('');
-        }
-      }
-      if (name === 'email') {
-        if (!emailRegExp.test(value)) {
-          setIsValid(false);
-          setValidMessage(validationMessages.invalidEmailMsg);
-        } else {
-          setIsValid(true);
-          setValidMessage('');
-        }
-      }
-    } else if (value === '' || isEmpty(value)) {
-      setIsValid(false);
-      setValidMessage(validationMessages.emptyFieldMsg);
-    }
-    updateFormData(name, value);
-  }, [value]);
-
+  const { isDirty, validMessage, setValue, value, setIsDirty, isValid } =
+    useInput({
+      isFormOpen: isFormOpen,
+      inputName: name as string,
+      isInputValid: isInputValid,
+      updateFormData: updateFormData
+    });
   return (
     <>
       <input

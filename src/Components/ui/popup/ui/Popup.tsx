@@ -7,7 +7,8 @@ import { IPopup } from '../model/types';
 export const Popup: React.FC<PropsWithChildren<IPopup>> = ({
   children,
   closeModal,
-  isModalOpen
+  isModalOpen,
+  isFullScreen
 }) => {
   usePopupClose({
     isOpen: isModalOpen,
@@ -19,8 +20,10 @@ export const Popup: React.FC<PropsWithChildren<IPopup>> = ({
   return (
     <div className={`${style.overlay} ${isModalOpen ? style.open : ''}`}>
       <div className={style.wrapper}>
-        <div className={style.window}>
-          <span className={style.close}>
+        <div
+          className={`${style.window} ${isFullScreen ? style.fullscreen : ''}`}
+        >
+          <span className={style.close} onClick={closeModal}>
             <svg
               width="20"
               height="20"

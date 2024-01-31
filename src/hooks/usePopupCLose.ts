@@ -10,8 +10,7 @@ type usePopupCloseProps = {
 export const usePopupClose = ({
   isOpen,
   closePopup,
-  wrapperClass,
-  closeClass
+  wrapperClass
 }: usePopupCloseProps) => {
   useEffect(() => {
     if (!isOpen) return;
@@ -19,10 +18,7 @@ export const usePopupClose = ({
     const handleOverlay = (evt: MouseEvent) => {
       const el = evt.target as Element;
       if (!el) return;
-      if (
-        el.classList.contains(wrapperClass) ||
-        el.classList.contains(closeClass)
-      ) {
+      if (el.classList.contains(wrapperClass)) {
         closePopup();
       }
     };

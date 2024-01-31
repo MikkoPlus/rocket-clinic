@@ -1,8 +1,13 @@
-export interface IInput extends React.InputHTMLAttributes<HTMLInputElement> {
-  name: string;
-  type: string;
-  placeholder: string;
+export interface useInputProps {
+  isFormOpen: boolean;
+  inputName: string;
   isInputValid: (isValid: boolean) => void;
   updateFormData: (name: string, value: string) => void;
-  isFormOpen: boolean;
+}
+
+export interface IInput
+  extends React.InputHTMLAttributes<HTMLInputElement>,
+    useInputProps {
+  type: string;
+  placeholder: string;
 }

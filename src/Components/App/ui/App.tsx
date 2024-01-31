@@ -2,30 +2,51 @@ import React from 'react';
 import style from './App.module.css';
 import Header from '@component/Header';
 import { useMenuState } from '@/hooks/useMenuState';
-import { useModalState } from '@/hooks/useModalState';
+import { useModalWithFormState } from '@/hooks/useModalWithFormState';
 import Promo from '@/Components/Promo';
 import FAQ from '@/Components/FAQ';
 import CheckUps from '@/Components/CheckUps';
 import Footer from '@/Components/Footer';
 import PopupWithForm from '@component/PopupWithForm';
+import PopupWithTooltip from '@/Components/PopupWithTooltip';
+import { useModalWithTooltipState } from '@/hooks/useModalWithTooltip';
 
 export const App: React.FC = () => {
   const { isActive, switchActiveState } = useMenuState();
-  const { closeModal, isModalVisible, openModal } = useModalState();
+  const [isLoading, setIsLoading] = React.useState<boolean>(false);
+  const [isSuccess, setIsSuccess] = React.useState<boolean>(false);
+  const { openFormModal, isModalWithFormVisible, closeFormModal } =
+    useModalWithFormState();
+
+  const { openTooltipModal, isTooltipModalVisible, closeTooltipModal } =
+    useModalWithTooltipState();
 
   return (
     <div className={style.app}>
       <Header
         switchMenuState={switchActiveState}
         isMenuActive={isActive}
-        openPopup={openModal}
+        openPopup={openFormModal}
       />
 
       <Promo />
       <FAQ />
       <CheckUps />
       <Footer />
-      <PopupWithForm closeModal={closeModal} isModalOpen={isModalVisible} />
+      <PopupWithForm
+        closeModal={closeFormModal}
+        isModalOpen={isModalWithFormVisible}
+        switchLoadingState={setIsLoading}
+        switchSuccessState={setIsSuccess}
+        showTooltipModal={openTooltipModal}
+        isLoading={isLoading}
+      />
+      <PopupWithTooltip
+        closeModal={closeTooltipModal}
+        isModalOpen={isTooltipModalVisible}
+        isLoading={isLoading}
+        isSuccess={isSuccess}
+      />
     </div>
   );
 };

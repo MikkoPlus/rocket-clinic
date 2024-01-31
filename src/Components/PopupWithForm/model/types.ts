@@ -1,3 +1,11 @@
-import { IPopup } from '@component/ui/popup/model/types';
+import { IPopup } from '@component/ui/Popup/model/types';
 
-export interface IPopupWithForm extends IPopup {}
+export interface ISubmitState {
+  switchLoadingState: (state: boolean) => void;
+  switchSuccessState: (state: boolean) => void;
+  showTooltipModal: () => void;
+}
+
+export interface IPopupWithForm extends IPopup, ISubmitState {
+  isLoading: boolean;
+}

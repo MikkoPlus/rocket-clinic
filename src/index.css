@@ -14,8 +14,3 @@ html {
   scroll-behavior: smooth;
   font-family: 'PTSans', 'Ubuntu', sans-serif;
 }
-
-body.lock {
-  height: 100%;
-  overflow: hidden;
-}
