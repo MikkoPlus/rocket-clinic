@@ -15,3 +15,18 @@ export const validationMessages = {
   invalidPhoneNumberMsg: 'Введите корректный номер телефона',
   invalidEmailMsg: 'Введите корректную почту'
 };
+
+export const emailID =
+  process.env.NODE_ENV === 'production'
+    ? process.env.REACT_APP_EMAIL_ID
+    : 'service_2d8wyhk';
+
+export const templateID =
+  process.env.NODE_ENV === 'production'
+    ? process.env.REACT_APP_EMAIL_ID
+    : 'template_krrkbvg';
+
+export const publicKey =
+  process.env.NODE_ENV === 'production'
+    ? process.env.REACT_APP_EMAIL_ID
+    : 'ceFQyPGkomwgcZjFy';
