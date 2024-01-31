@@ -31,27 +31,6 @@
   row-gap: 16px;
 }
 
-.input {
-  width: 100%;
-  width: -moz-available;
-  width: -webkit-fill-available;
-  width: fill-available;
-  margin: 0;
-  padding: 10px 16px;
-  border: 1px solid #e1e1e1;
-  border-radius: 2px;
-  background-color: #fff;
-  color: var(--text-color);
-}
-
-.input:focus-visible {
-  outline: var(--light-acent-color) auto 1px;
-}
-
-.input::placeholder {
-  color: #868686;
-}
-
 .button {
   margin-top: 16px;
 }

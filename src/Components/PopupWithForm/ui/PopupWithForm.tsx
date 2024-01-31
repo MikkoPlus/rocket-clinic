@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { FormEvent, useState } from 'react';
 import style from './PopupWithForm.module.css';
 import Popup from '@component/ui/popup';
 import { IPopupWithForm } from '../model/types';
 import Button from '@/Components/ui/Button';
+import Input from '@/Components/ui/Input/Index';
 
 export const PopupWithForm: React.FC<IPopupWithForm> = ({
   closeModal,
   isModalOpen
 }) => {
+  const [formData, setFormData] = useState<Record<string, string>>({});
+  const [isFormValid, setIsFormValid] = useState<boolean>(false);
+  const [isNameInputValid, setIsNameInputValid] = useState<boolean>(false);
+  const [isPhoneInputValid, setIsPhoneInputValid] = useState<boolean>(false);
+  const [isEmailInputValid, setIsEmailInputValid] = useState<boolean>(false);
+
+  function handleFormSubmit(evt: FormEvent<HTMLFormElement>) {
+    evt.preventDefault();
+    console.log(formData);
+  }
+
+  function updateFormData(name: string, value: string) {
+    setFormData({ ...formData, [name]: value });
+  }
+
+  React.useEffect(() => {
+    setIsFormValid(isNameInputValid && isPhoneInputValid && isEmailInputValid);
+  }, [isNameInputValid, isPhoneInputValid, isEmailInputValid, isFormValid]);
+
   return (
     <Popup closeModal={closeModal} isModalOpen={isModalOpen}>
       <div className={style.wrapper}>
@@ -21,21 +41,34 @@ export const PopupWithForm: React.FC<IPopupWithForm> = ({
             WhatsApp в течение дня и уточнит детали
           </p>
         </div>
-        <form className={style.form}>
-          <input placeholder="ФИО" className={style.input} type="text" />
-          <input
-            placeholder="Номер телефона"
-            className={style.input}
+        <form noValidate className={style.form} onSubmit={handleFormSubmit}>
+          <Input
+            name="name"
+            placeholder="ФИО"
             type="text"
+            isInputValid={setIsNameInputValid}
+            isFormOpen={isModalOpen}
+            updateFormData={updateFormData}
           />
-          <input
-            placeholder="Электронная почта"
-            className={style.input}
+          <Input
+            name="phone"
+            placeholder="Номер телефона"
             type="text"
+            isInputValid={setIsPhoneInputValid}
+            isFormOpen={isModalOpen}
+            updateFormData={updateFormData}
+          />
+          <Input
+            name="email"
+            placeholder="Электронная почта"
+            type="text"
+            isInputValid={setIsEmailInputValid}
+            isFormOpen={isModalOpen}
+            updateFormData={updateFormData}
           />
           <Button
             additionalClass={style.button}
-            btnClick={() => console.log('click')}
+            disabled={!isFormValid}
             variant="green"
             text="Записаться"
           />
