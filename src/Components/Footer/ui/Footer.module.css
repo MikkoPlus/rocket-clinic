@@ -1,8 +1,12 @@
 .footer {
+  background-color: var(--dark-acent-color);
+}
+
+.wrapper {
   max-width: 1200px;
   padding: 60px 30px;
-  background-color: var(--dark-acent-color);
   display: flex;
+  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
 }
@@ -41,7 +45,7 @@
 }
 
 @media (max-width: 768px) {
-  .footer {
+  .wrapper {
     padding: 42px 17px;
     flex-wrap: wrap;
     column-gap: 200px;
@@ -66,13 +70,13 @@
 }
 
 @media (max-width: 565px) {
-  .footer {
+  .wrapper {
     column-gap: 100px;
   }
 }
 
 @media (max-width: 400px) {
-  .footer {
+  .wrapper {
     column-gap: 50px;
   }
 }

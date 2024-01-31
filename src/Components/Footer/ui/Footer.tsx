@@ -14,40 +14,42 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className={style.footer}>
-      <Logo wrapperClass={style.logo} />
-      <Menu menuClass={style.menu} />
-      <ul className={style.list}>
-        <li className={style.item}>
-          <a
-            className={style.link}
-            target="_blank"
-            rel="noreferrer"
-            href={socials.instagramLink}
-          >
-            <img className={style.img} src={instagramIcon} alt="Instagram" />
-          </a>
-        </li>
-        <li className={style.item}>
-          <a
-            className={style.link}
-            target="_blank"
-            rel="noreferrer"
-            href={`tel:+${onlyDigitsNumber}`}
-          >
-            <img className={style.img} src={whatsappIcon} alt="whatsapp" />
-          </a>
-        </li>
-        <li className={style.item}>
-          <a
-            className={style.link}
-            target="_blank"
-            rel="noreferrer"
-            href={socials.telegramLink}
-          >
-            <img className={style.img} src={telegramIcon} alt="Telegram" />
-          </a>
-        </li>
-      </ul>
+      <div className={style.wrapper}>
+        <Logo wrapperClass={style.logo} />
+        <Menu menuClass={style.menu} />
+        <ul className={style.list}>
+          <li className={style.item}>
+            <a
+              className={style.link}
+              target="_blank"
+              rel="noreferrer"
+              href={socials.instagramLink}
+            >
+              <img className={style.img} src={instagramIcon} alt="Instagram" />
+            </a>
+          </li>
+          <li className={style.item}>
+            <a
+              className={style.link}
+              target="_blank"
+              rel="noreferrer"
+              href={`tel:+${onlyDigitsNumber}`}
+            >
+              <img className={style.img} src={whatsappIcon} alt="whatsapp" />
+            </a>
+          </li>
+          <li className={style.item}>
+            <a
+              className={style.link}
+              target="_blank"
+              rel="noreferrer"
+              href={socials.telegramLink}
+            >
+              <img className={style.img} src={telegramIcon} alt="Telegram" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   );
 };
