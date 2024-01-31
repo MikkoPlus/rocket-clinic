@@ -7,12 +7,14 @@ export const Button: React.FC<ButtonProps> = ({
   variant,
   text,
   additionalClass,
-  btnClick
+  btnClick,
+  disabled
 }) => {
   return (
     <button
       onClick={btnClick}
       className={`${style.button} ${style[buttonVariants[variant]]} ${additionalClass ? additionalClass : ''}`}
+      disabled={disabled}
     >
       {text}
     </button>
