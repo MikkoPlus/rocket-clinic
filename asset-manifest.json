@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/MikkoPlus/rocket-clinic/static/css/main.4dd987eb.css",
-    "main.js": "/MikkoPlus/rocket-clinic/static/js/main.5f901c60.js",
-    "static/media/promo-img.jpg": "/MikkoPlus/rocket-clinic/static/media/promo-img.fc08e49f853f989d1138.jpg",
-    "static/media/check-up-img.jpg": "/MikkoPlus/rocket-clinic/static/media/check-up-img.0f7731df9cb2d3901ed3.jpg",
-    "static/media/Ubuntu-Regular.woff": "/MikkoPlus/rocket-clinic/static/media/Ubuntu-Regular.fe9d4feca52d55caf18f.woff",
-    "static/media/Ubuntu-Regular.woff2": "/MikkoPlus/rocket-clinic/static/media/Ubuntu-Regular.f0c95172522d9ce0e179.woff2",
-    "static/media/PTSansCaption-Regular.woff": "/MikkoPlus/rocket-clinic/static/media/PTSansCaption-Regular.a3b83ce124be5c3ee5b8.woff",
-    "static/media/Ubuntu-Bold.woff": "/MikkoPlus/rocket-clinic/static/media/Ubuntu-Bold.900d24d752875b6939f6.woff",
-    "static/media/PTSansCaption-Bold.woff": "/MikkoPlus/rocket-clinic/static/media/PTSansCaption-Bold.bc847c1ec5df00feecc7.woff",
-    "static/media/Ubuntu-Bold.woff2": "/MikkoPlus/rocket-clinic/static/media/Ubuntu-Bold.6d67deb822219b40151c.woff2",
-    "static/media/PTSansCaption-Regular.woff2": "/MikkoPlus/rocket-clinic/static/media/PTSansCaption-Regular.959026e112db69b3fa1b.woff2",
-    "static/media/PTSansCaption-Bold.woff2": "/MikkoPlus/rocket-clinic/static/media/PTSansCaption-Bold.afd46b5fb9dbae82dffa.woff2",
-    "static/media/whatsapp.svg": "/MikkoPlus/rocket-clinic/static/media/whatsapp.5cca70760a03976af084f1e788abcd23.svg",
-    "static/media/spinner.gif": "/MikkoPlus/rocket-clinic/static/media/spinner.1952935ed80fba5926fe.gif",
-    "static/media/telegram.svg": "/MikkoPlus/rocket-clinic/static/media/telegram.c58ed4459e07c65f18ebfd797d1d95cc.svg",
-    "static/media/instagram.svg": "/MikkoPlus/rocket-clinic/static/media/instagram.c6690ed2c2def73fc098991ab0a89886.svg",
-    "index.html": "/MikkoPlus/rocket-clinic/index.html",
-    "static/media/success-denied.svg": "/MikkoPlus/rocket-clinic/static/media/success-denied.d4ce2a261b68c6da973d51ef98afae1a.svg",
-    "static/media/success.svg": "/MikkoPlus/rocket-clinic/static/media/success.2b96fab150ff4b12a8a1083b121b4f1c.svg",
-    "main.4dd987eb.css.map": "/MikkoPlus/rocket-clinic/static/css/main.4dd987eb.css.map",
-    "main.5f901c60.js.map": "/MikkoPlus/rocket-clinic/static/js/main.5f901c60.js.map"
+    "main.css": "/rocket-clinic/static/css/main.63ecb615.css",
+    "main.js": "/rocket-clinic/static/js/main.afcf1fd5.js",
+    "static/media/promo-img.jpg": "/rocket-clinic/static/media/promo-img.fc08e49f853f989d1138.jpg",
+    "static/media/check-up-img.jpg": "/rocket-clinic/static/media/check-up-img.0f7731df9cb2d3901ed3.jpg",
+    "static/media/Ubuntu-Regular.woff": "/rocket-clinic/static/media/Ubuntu-Regular.fe9d4feca52d55caf18f.woff",
+    "static/media/Ubuntu-Regular.woff2": "/rocket-clinic/static/media/Ubuntu-Regular.f0c95172522d9ce0e179.woff2",
+    "static/media/PTSansCaption-Regular.woff": "/rocket-clinic/static/media/PTSansCaption-Regular.a3b83ce124be5c3ee5b8.woff",
+    "static/media/Ubuntu-Bold.woff": "/rocket-clinic/static/media/Ubuntu-Bold.900d24d752875b6939f6.woff",
+    "static/media/PTSansCaption-Bold.woff": "/rocket-clinic/static/media/PTSansCaption-Bold.bc847c1ec5df00feecc7.woff",
+    "static/media/Ubuntu-Bold.woff2": "/rocket-clinic/static/media/Ubuntu-Bold.6d67deb822219b40151c.woff2",
+    "static/media/PTSansCaption-Regular.woff2": "/rocket-clinic/static/media/PTSansCaption-Regular.959026e112db69b3fa1b.woff2",
+    "static/media/PTSansCaption-Bold.woff2": "/rocket-clinic/static/media/PTSansCaption-Bold.afd46b5fb9dbae82dffa.woff2",
+    "static/media/whatsapp.svg": "/rocket-clinic/static/media/whatsapp.5cca70760a03976af084f1e788abcd23.svg",
+    "static/media/spinner.gif": "/rocket-clinic/static/media/spinner.1952935ed80fba5926fe.gif",
+    "static/media/telegram.svg": "/rocket-clinic/static/media/telegram.c58ed4459e07c65f18ebfd797d1d95cc.svg",
+    "static/media/instagram.svg": "/rocket-clinic/static/media/instagram.c6690ed2c2def73fc098991ab0a89886.svg",
+    "index.html": "/rocket-clinic/index.html",
+    "static/media/success-denied.svg": "/rocket-clinic/static/media/success-denied.d4ce2a261b68c6da973d51ef98afae1a.svg",
+    "static/media/success.svg": "/rocket-clinic/static/media/success.2b96fab150ff4b12a8a1083b121b4f1c.svg",
+    "main.63ecb615.css.map": "/rocket-clinic/static/css/main.63ecb615.css.map",
+    "main.afcf1fd5.js.map": "/rocket-clinic/static/js/main.afcf1fd5.js.map"
   },
   "entrypoints": [
-    "static/css/main.4dd987eb.css",
-    "static/js/main.5f901c60.js"
+    "static/css/main.63ecb615.css",
+    "static/js/main.afcf1fd5.js"
   ]
 }
