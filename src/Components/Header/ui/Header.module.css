@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  background-color: #f6f6f6;
 }
 
 .wrapper {
@@ -13,7 +14,6 @@
   max-width: 1140px;
   margin: 0 auto;
   padding: 12px 30px;
-  background-color: #f6f6f6;
 }
 
 .menuWrapper {
@@ -93,6 +93,7 @@
   .wrapper {
     max-width: 100%;
     padding: 12px 20px;
+    background-color: #f6f6f6;
   }
   .menu {
     max-width: 100%;
@@ -173,7 +174,7 @@
   }
   .invisibleArea {
     display: block;
-    height: 59px;
+    height: 57px;
   }
 }
 
