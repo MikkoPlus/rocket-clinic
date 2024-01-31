@@ -1,15 +1,16 @@
 import React from 'react';
 import style from './CheckUp.module.css';
 import Button from '@/Components/ui/Button';
-import { CheckUpProps } from '../model/types';
+import { ICheckUp } from '../model/types';
 import checkupImg from '@img/check-up-img.jpg';
 
-export const CheckUp: React.FC<CheckUpProps> = ({
+export const CheckUp: React.FC<ICheckUp> = ({
   title,
   gender,
   checkups,
   oldPrice,
-  currentPrice
+  currentPrice,
+  openModal
 }) => {
   return (
     <div className={style.checkup}>
@@ -17,7 +18,7 @@ export const CheckUp: React.FC<CheckUpProps> = ({
         <div className={style.content}>
           <div className={style.textContent}>
             <h3 className={style.title}>{title}</h3>
-            <p className={style.gender}>{gender}</p>
+            <span className={style.gender}>{gender}</span>
             <ul className={style.list}>
               {checkups.map((item, index) => {
                 return (
@@ -37,7 +38,7 @@ export const CheckUp: React.FC<CheckUpProps> = ({
               variant="green"
               text="Записаться"
               additionalClass={style.btn}
-              btnClick={() => console.log('click')}
+              btnClick={openModal}
             />
             <Button
               variant="white"

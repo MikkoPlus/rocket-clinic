@@ -4,7 +4,10 @@ import { LogoProps } from '../model/types';
 
 export const Logo: React.FC<LogoProps> = ({ wrapperClass, isGreen }) => {
   return (
-    <a className={`${style.wrapper} ${wrapperClass}`} href="/">
+    <a
+      className={`${style.wrapper} ${wrapperClass}`}
+      href="https://mikkoplus.github.io/rocket-clinic/"
+    >
       <svg viewBox="0 0 92 27" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M17.811 26.384H0V0.517333H5.46895V21.5802H17.811V26.384Z"

@@ -12,9 +12,10 @@ import PopupWithTooltip from '@/Components/PopupWithTooltip';
 import { useModalWithTooltipState } from '@/hooks/useModalWithTooltip';
 
 export const App: React.FC = () => {
-  const { isActive, switchActiveState } = useMenuState();
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
   const [isSuccess, setIsSuccess] = React.useState<boolean>(false);
+
+  const { isActive, switchActiveState } = useMenuState();
   const { openFormModal, isModalWithFormVisible, closeFormModal } =
     useModalWithFormState();
 
@@ -31,7 +32,7 @@ export const App: React.FC = () => {
 
       <Promo />
       <FAQ />
-      <CheckUps />
+      <CheckUps openModal={openFormModal} />
       <Footer />
       <PopupWithForm
         closeModal={closeFormModal}

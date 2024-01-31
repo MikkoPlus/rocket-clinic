@@ -9,8 +9,9 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { ICheckUps } from '../model/types';
 
-export const CheckUps: React.FC = () => {
+export const CheckUps: React.FC<ICheckUps> = ({ openModal }) => {
   return (
     <section className={style.checkups}>
       <Swiper
@@ -34,6 +35,7 @@ export const CheckUps: React.FC = () => {
                 checkups={checkups}
                 currentPrice={price.current}
                 oldPrice={price.old}
+                openModal={openModal}
               />
             </SwiperSlide>
           );

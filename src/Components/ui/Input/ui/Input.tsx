@@ -14,7 +14,7 @@ export const Input: React.FC<IInput> = ({
   const { isDirty, validMessage, setValue, value, setIsDirty, isValid } =
     useInput({
       isFormOpen: isFormOpen,
-      inputName: name as string,
+      name: name,
       isInputValid: isInputValid,
       updateFormData: updateFormData
     });
