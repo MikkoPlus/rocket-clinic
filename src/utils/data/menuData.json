@@ -1,0 +1,22 @@
+[
+  {
+    "title": "О клинике",
+    "link": "/about"
+  },
+  {
+    "title": "Услуги",
+    "link": "/services"
+  },
+  {
+    "title": "Специалисты",
+    "link": "/experts"
+  },
+  {
+    "title": "Цены",
+    "link": "/price"
+  },
+  {
+    "title": "Контакты",
+    "link": "/contacts"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Check-UP",
+    "gender": "для мужчин",
+    "checkups": [
+      "Гормональный скрининг",
+      "Тестостерон",
+      "Свободный тестостерон",
+      "Глобулин, связывающий половые гормоны"
+    ],
+    "price": {
+      "current": 2800,
+      "old": 3500
+    }
+  },
+  {
+    "title": "Check-UP",
+    "gender": "для женщин",
+    "checkups": [
+      "Гормональный скрининг",
+      "Тестостерон",
+      "Свободный тестостерон",
+      "Тестостерон",
+      "Свободный тестостерон"
+    ],
+    "price": {
+      "current": 3700,
+      "old": 5000
+    }
+  },
+  {
+    "title": "Check-UP",
+    "gender": "для детей",
+    "checkups": [
+      "Гормональный скрининг",
+      "Тестостерон",
+      "Lorem ipsum  dicta sint impedit esse, delectus adipisci enim alias nemo obcaecati."
+    ],
+    "price": {
+      "current": 2200,
+      "old": 3500
+    }
+  }
+]
