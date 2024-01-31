@@ -35,6 +35,11 @@
   border: 1px solid var(--light-acent-color);
 }
 
+.button:disabled {
+  background-color: var(--text-color);
+  cursor: default;
+}
+
 @media (max-width: 768px) {
   .button {
     max-width: min-content;
