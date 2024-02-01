@@ -58,7 +58,7 @@
     object-position: center;
   }
   .textBlock {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 100px 20px;
     text-align: left;
