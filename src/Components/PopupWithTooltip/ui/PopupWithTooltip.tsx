@@ -31,7 +31,7 @@ export const PopupWithTooltip: React.FC<IPopupWithTooltip> = ({
         closeModal();
       }, 1500);
     }
-  }, [isLoading]);
+  }, [isLoading, isModalOpen]);
 
   return (
     <Popup closeModal={closeModal} isModalOpen={isModalOpen}>

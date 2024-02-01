@@ -3,6 +3,7 @@ export interface useInputProps {
   isInputValid: (isValid: boolean) => void;
   updateFormData: (name: string, value: string) => void;
   name: string;
+  isFormReset: boolean;
 }
 
 export interface IInput

@@ -6,7 +6,8 @@ import { emailID, publicKey, templateID } from '@utils/constants';
 export const useForm = ({
   switchLoadingState,
   switchSuccessState,
-  showTooltipModal
+  showTooltipModal,
+  closeModal
 }: ISubmitState) => {
   const [formData, setFormData] = useState<Record<string, string>>({});
   const [isFormValid, setIsFormValid] = useState<boolean>(false);
@@ -38,15 +39,21 @@ export const useForm = ({
       )
       .then(() => {
         switchSuccessState(true);
+        resetForm();
+        setTimeout(() => {
+          closeModal();
+        }, 2000);
       })
       .catch(error => {
         switchSuccessState(false);
         console.log(error);
       })
       .finally(() => {
-        showTooltipModal();
         switchLoadingState(false);
-        resetForm();
+
+        setTimeout(() => {
+          showTooltipModal();
+        }, 500);
       });
   }
 
