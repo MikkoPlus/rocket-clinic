@@ -20,7 +20,7 @@ export const FAQItem: React.FC<FAQItemProps> = ({ text, title }) => {
       </div>
       {text.map((textItem, index) => {
         return (
-          <div key={index} aria-expanded={!isOpen} className={style.text}>
+          <div key={index} aria-expanded={isOpen} className={style.text}>
             <p className={style.textContent}>{textItem}</p>
           </div>
         );
