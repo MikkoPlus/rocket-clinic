@@ -7,7 +7,8 @@ export const useInput = ({
   isFormOpen,
   name,
   isInputValid,
-  updateFormData
+  updateFormData,
+  isFormReset
 }: useInputProps) => {
   const [isValid, setIsValid] = useState(false);
   const [validMessage, setValidMessage] = useState('');
@@ -16,7 +17,8 @@ export const useInput = ({
 
   useEffect(() => {
     setIsDirty(false);
-  }, [isFormOpen]);
+    setValue('');
+  }, [isFormOpen, isFormReset]);
 
   useEffect(() => {
     isInputValid(isValid);
@@ -26,7 +28,6 @@ export const useInput = ({
     if (value !== '') {
       setIsValid(true);
       setValidMessage('');
-      console.log(name);
 
       if (name === 'phone') {
         if (!phoneNumberRegExp.test(value)) {
