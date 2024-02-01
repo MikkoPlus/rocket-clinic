@@ -26,8 +26,10 @@
   transition: transform 0.1s linear;
 }
 
-.link:hover::after {
-  transform: scale(1);
+@media (hover: hover) and (pointer: fine) {
+  .link:hover::after {
+    transform: scale(1);
+  }
 }
 @media (max-width: 768px) {
   .link {

@@ -9,14 +9,16 @@ export const Input: React.FC<IInput> = ({
   placeholder,
   isFormOpen,
   updateFormData,
-  isInputValid
+  isInputValid,
+  isFormReset
 }) => {
   const { isDirty, validMessage, setValue, value, setIsDirty, isValid } =
     useInput({
       isFormOpen: isFormOpen,
       name: name,
       isInputValid: isInputValid,
-      updateFormData: updateFormData
+      updateFormData: updateFormData,
+      isFormReset
     });
   return (
     <>
